@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Daily Schedule Planner – Inline Edit</title>
+<link rel="stylesheet" href="schedule.css">
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+
+
+</head>
+<body>
+
+<header>
+  <h1>Daily Schedule Planner</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="task.html">Tasks</a>
+            <a href="progress.html">Progress</a>
+
+        <a href="#" id="toggleMode" class="toggle-btn">Dark Mode</a>
+
+  </nav>
+</header>
+
+<div class="container">
+  <div class="hero">
+    <h2>Plan Your Day, Get Things Done</h2>
+    <p>Add tasks, set priorities, and build a clear schedule—everything in one place.</p>
+
+  <div id="tasksCard" class="card">
+    <h2>Add Task</h2>
+    <label style="text-align: left;">Task Name</label>
+    <input id="taskName" type="text" placeholder="e.g. Laundry">
+    <label style="text-align: left;">Duration (minutes)</label>
+    <input id="taskDuration" type="number" min="1" placeholder="30">
+    <label style="text-align: left;">Priority</label>
+    <select id="taskPriority"><option>High</option><option>Medium</option><option>Low</option></select>
+    <label style="text-align: left;">Category</label>
+    <select id="taskCategory"><option>Work</option><option>Home</option><option>Health</option><option>Errands</option></select>
+    <label style="text-align: left;">Hardness</label>
+    <select id="taskHardness"><option>Hard</option><option>Medium</option><option>Easy</option></select>
+    <label style="text-align: left;">Day Start & Available Minutes</label>
+    <div style="display:flex;gap:10px;">
+      <input id="dayStart" type="time" value="08:00" style="flex:1">
+      <input id="availableTime" type="number" value="480" style="flex:1">
+    </div>
+    <button id="addTaskBtn" class="btn">Add Task</button>
+    <button id="autoSchedule" class="btn ghost">Auto Schedule</button>
+
+    <h2 style="margin-top:20px;">Today's Tasks</h2>
+    <ul id="tasksList" class="tasks"></ul>
+    <div id="conflictBox" class="err"></div>
+  </div>
+
+  <div id="scheduleCard" class="card" style="display:none;">
+    <h2>Generated Daily Schedule</h2>
+    <div id="scheduleTable"></div>
+    <button id="toggleEditBtn" class="btn ghost" style="margin-top:15px;">Edit Schedule</button>
+  </div>
+
+  <div class="card stats">
+    <div class="stat-card">
+      <canvas id="progressChart" width="180" height="180"></canvas>
+      <div style="margin-top:6px">Planned vs Completed</div>
+    </div>
+  </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="schedule.js"></script>
+</body>
+</html>
