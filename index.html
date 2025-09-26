@@ -1,0 +1,246 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Planner – Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<style>
+    /* Base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f9fafb;
+  color: #1f2937;
+}
+a { text-decoration: none; color: inherit; }
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: #111827;
+  color: #fff;
+}
+.nav-logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.nav-links a {
+  color: #e5e7eb;
+  transition: color 0.2s;
+}
+.nav-links a:hover,
+.nav-links a.active { color: #60a5fa; }
+
+/* Hero */
+.hero {
+  height: calc(100vh - 64px);
+  background: linear-gradient(135deg,#60a5fa 0%,#2563eb 50%,#1e3a8a 100%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 10%;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+.btn-primary {
+  background: #fbbf24;
+  color: #111827;
+  padding: 0.9rem 2rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+  transition: transform 0.2s, background 0.2s;
+}
+.btn-primary:hover {
+  background: #f59e0b;
+  transform: translateY(-2px);
+}
+
+/* Features */
+.features {
+  padding: 4rem 10%;
+  background: #fff;
+}
+.features h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 2rem;
+}
+.feature-card {
+  background: #f3f4f6;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+.feature-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: #2563eb;
+}
+
+/* Footer */
+.footer {
+  background: #111827;
+  color: #9ca3af;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+</style>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">Smart Planner</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="schedules.html">Schedules</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Plan Smarter. Stress Less.</h1>
+      <p>Your personal daily scheduler and study planner that adapts to you.</p>
+      <a href="planner.html" class="btn-primary">Get Started</a>
+    </div>
+  </header>
+
+  <section class="features">
+    <h2>Why Smart Planner?</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>Auto Scheduling</h3>
+        <p>Enter tasks and let the planner build an optimal day plan in seconds.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Real-time Progress</h3>
+        <p>Check off tasks and watch your completion ring fill with satisfying animation.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Smart Reminders</h3>
+        <p>Optional break timers and conflict detection keep you on track effortlessly.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Smart Planner. Built for productivity.</p>
+  </footer>
+</body>
+</html>
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Schedule Planner</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+<link rel="stylesheet" href="homepage.css"
+</head>
+<body>
+
+
+<header>
+  <h1>Smart Study Planner</h1>
+  <nav>
+    <a href="#" id="aboutLink">About</a>
+    <a href="#" id="toggleMode" class="toggle-btn">Dark Mode</a>
+
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="glass-card" data-aos="fade-up">
+    <h2>Welcome to Smart Study Planner</h2>
+    <p>Plan Your Day, Own Your Time</p>
+    <div class="btn-group">
+      <a href="task.html"><button class="btn btn-primary">Plan Academics</button></a>
+      <a href="schedule.html"><button class="btn btn-primary">Plan Tasks</button></a>
+    <a href="progress.html"><button class="btn btn-primary">View your Progress</button></a>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="features">
+  <h3 data-aos="fade-up">Why You’ll Love It</h3>
+  <div class="features-grid">
+    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+      <h4>Auto Scheduling</h4>
+      <p>Enter tasks and let the planner create a conflict-free schedule automatically.</p>
+    </div>
+    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+      <h4>Progress Tracking</h4>
+      <p>Visualize your daily accomplishments with an animated completion chart.</p>
+    </div>
+    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+      <h4>Break Reminders</h4>
+      <p>Get smart break suggestions to maintain productivity and avoid burnout.</p>
+    </div>
+    <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+      <h4>Responsive Design</h4>
+      <p>Enjoy a seamless experience across desktop, tablet, and mobile devices.</p>
+    </div>
+  </div>
+</section>
+
+<div id="aboutModal" class="modal-overlay">
+  <div class="modal-content glass-card">
+    <button class="modal-close" id="closeAbout">&times;</button>
+    <h2>About Daily Schedule Planner</h2>
+    <p>
+      Daily Schedule Planner is your all-in-one productivity hub.<br>
+Effortlessly add tasks, set priorities, and let the Auto-Schedule feature create a perfectly timed plan for your day.<br>
+Stay on track with streak tracking, monitor your study and chores progress, and stay motivated by earning fun badges like 7-Day Streak or On-Time Finisher.
+    </p>
+  </div>
+</div>
+
+
+<footer>
+  © 2025 Daily Schedule Planner. Built with ❤️ for productivity.
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="homepage.js"></script>
+</body>
+</html>
